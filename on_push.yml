@@ -1,0 +1,11 @@
+name: "say hello on each push"
+on: 
+   push: # executed on all push
+  jobs:
+     say_hello: #first job declaration
+     name: "say hello "
+     runs-on:  ubuntu-latest
+     steps:
+          name: "say hello"
+          run: 
+          echo "ceci est le premier job."
